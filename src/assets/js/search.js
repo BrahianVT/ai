@@ -6,7 +6,6 @@ Only run on search page ("/search/")
 class SearchPosts {
   async init() {
     const params = new URL(location.href).searchParams;
-
     this.start = Number(params.get('start')) || 1;
     this.size = Number(params.get('size')) || 12;
 
@@ -24,6 +23,10 @@ class SearchPosts {
 
     query = typeof query === 'string' ? query.toLowerCase() : '';
 
+    if(query === ''){
+        query = localStorage['headerInput'] || '';
+        localStorage['headerInput'] = "";
+    }
     history.replaceState(null, null, `?q=${query}&start=${this.start}&size=${this.size}`);
 
     searchBoxEl.value = query;

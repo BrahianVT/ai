@@ -35,6 +35,14 @@ menuToggle.addEventListener('click', () => {
   searchBox.classList.toggle('hidden');
 }, false);
 
+
+const headerInput = document.getElementById("header-searchbox");
+headerInput.addEventListener('keypress', function (e) {
+    if(e.key === 'Enter') {
+      localStorage['headerInput'] = headerInput.value;
+    }
+});
+
 /*
 Lazy load images
 */
