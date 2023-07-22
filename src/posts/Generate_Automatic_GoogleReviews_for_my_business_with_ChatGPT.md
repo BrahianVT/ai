@@ -5,7 +5,7 @@ thumb: "3.PNG"
 tags: [Others, Business]
 ---
 
-ChatGPT
+
 # Use AI to help me generate automatic Google reviews for my business in just three simple steps 
 
 1. Connect your chat GPT and your Google Map business to [Zapier](https://zapier.com/apps/google-my-business/integrations/chatgpt) 
