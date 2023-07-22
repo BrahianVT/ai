@@ -1,12 +1,12 @@
 ---
-title: "# Use AI to generate automatic Google reviews for my business in just three simple steps"
+title: "Use AI to generate automatic Google reviews for my business in just three simple steps"
 date: "2023-07-21"
 thumb: "3.PNG"
 tags: [Others, Business]
 ---
 
 ChatGPT
-# use AI to help me generate automatic Google reviews for my business in just three simple steps 
+# Use AI to help me generate automatic Google reviews for my business in just three simple steps 
 
 1. Connect your chat GPT and your Google Map business to [Zapier](https://zapier.com/apps/google-my-business/integrations/chatgpt) 
 ![Zapier](/assets/img/1.PNG)
