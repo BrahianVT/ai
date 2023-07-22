@@ -15,7 +15,7 @@ ChatGPT
 > Respond to this Google review do not include an explanation of why or what you see just include the response make a friendly yet professional 
 
 ![Prompt](/assets/img/2.PNG)
-**I found the more specific the better**
+**I found the more specific the better**  
 3. Now we're going to create a zap to send over the reply we got from our AI directly onto our Google my business account.
 
 ![Prompt](/assets/img/2.PNG)
