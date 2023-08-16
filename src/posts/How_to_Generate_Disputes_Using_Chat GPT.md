@@ -1,6 +1,6 @@
 ---
 title: "How to Generate Disputes Using Chat GPT"
-date: "2023-07-21"
+date: "2023-08-15"
 thumb: "dist3.PNG"
 tags: [Others ]
 ---
