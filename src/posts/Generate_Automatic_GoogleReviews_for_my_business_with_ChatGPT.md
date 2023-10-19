@@ -27,3 +27,7 @@ And now we're ready to send out some reviews so let's select a bunch of these co
 Short and sweet nice and professional and making sure that we have that personalized touch to it by adding this custom value and there we go not too bad 25 reviews in just a few hours everything has been replied to this was all done automatically and every single one of them is a different response.
 
 ![sms](/assets/img/review.PNG)
+
+
+  
+  
