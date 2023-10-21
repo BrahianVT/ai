@@ -22,6 +22,14 @@ layout: default
     <div id="content" class="prose text-slate-800 max-w-none">
         {{ content | safe }}
     </div>
+
+    {% set randomPosts = collections.posts | getRandom5 %}
+    <br>
+    {% for rand in randomPosts %}
+        <strong  style="color: red">You may also check </strong> : <a href="{{rand.url}}">{{ rand.data.title }}</a><br>
+    {% endfor%}
+    
+
     {% if site.disqusShortname %}
     <div class="mt-10">
         {% if process.environment === "production" %}
