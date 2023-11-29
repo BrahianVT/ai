@@ -28,6 +28,7 @@ with Bing Chat or chat GPT or Google Bard just to name a few.
   - [Monetization](#monetization)
 
 ---
+<div id="youtube"/>
 
 ## YouTube
 * [YouTube Title Generator](https://chat.openai.com/g/g-C0GkFgnUd-youtube-title-generator) - Adapts to create SEO-optimized, catchy YouTube titles.
@@ -41,6 +42,8 @@ with Bing Chat or chat GPT or Google Bard just to name a few.
 * [YouTubeTrend Analyst](https://gptstore.ai/gpts/WxzzBuMIGJ-youtub-data-summarizer) - Analyzes global YouTube trends.
 * [Yotube Title and Description Maker](https://gptstore.ai/gpts/BmtHk2p6a6-yotube-title-and-description-maker) - Expert in YouTube SEO, crafting compelling titles and descriptions.
 
+<div id="instagram"/>
+
 ## Instagram
 * [Insta Guru](https://gptstore.ai/gpts/dpwUpUNx3h-insta-guru) - A friendly Instagram expert, here to boost your social media presence!
 * [Carousel Crafter](https://gptstore.ai/gpts/v_W_E4xnFO-carousel-crafter) - Instagram Carousel Content Creator with Engaging Descriptions.
@@ -48,6 +51,8 @@ with Bing Chat or chat GPT or Google Bard just to name a few.
 * [Midjourney Helper](https://gptstore.ai/gpts/oqAsFojI5-midjourney-helper) - Creates detailed Midjourney art prompts, Instagram captions, and hashtags, optimized for easy copying.
 * [IG Community Manager](https://gptstore.ai/gpts/q7gcwPxcLB-ig-helper) - Community Manager for Instagram posts.
 * [InstaCarousel AI](https://gptstore.ai/gpts/nbX9fzSMET-instacarousel-ai-carousel-creation-for-instagram) - AI Carousel ChatGPT Wizard tailors Instagram carousels to trends and audience preferences.
+
+<div id="tiktok"/>
 
 ## Tiktok
 * [Tweet Insight](https://gptstore.ai/gpts/HRA77s6gIZ-tweet-insight) - Expert on Twitter's algo with code insights.
@@ -58,6 +63,8 @@ with Bing Chat or chat GPT or Google Bard just to name a few.
 * [Short Video Caption Generator](https://gptstore.ai/gpts/o90evTXH0C-short-video-caption-generator) - TikTok Caption Generator: based on millions of weekly updated viral videos, crafts engaging and viral captions for videos.
 * [Twitter Bio Craft](https://gptstore.ai/gpts/BBaT0m_A3x-twitter-bio-craft) - Create catchy, professional Twitter bios with emojis and hashtags..
 
+<div id="twitter"/>
+
 ## Twitter
 * [Content Script writer](https://gptstore.ai/gpts/lbyomKP0HI-content-script-writer) - Crafts engaging TikTok scripts.
 * [Tweet AI](https://gptstore.ai/gpts/ZFm3WlTGKe-tweet-ai) - Rewrite tweet that are likely to go viral in twitter! Just type what you want to tweet.
@@ -65,6 +72,9 @@ with Bing Chat or chat GPT or Google Bard just to name a few.
 * [Blog article to Twitter / X Thread](https://gptstore.ai/gpts/h1qoBBYLC4-blog-article-to-twitter-x-thread) - Give me a blog article and I turn it into a viral X thread.
 * [Thread Weaver](https://gptstore.ai/gpts/mkRlgcXkJv-thread-weaver) - Make engaging Twitter (X) threads from YouTube videos, articles, or text. Generate engaging thumbnails based on your thread.
 * [Twitter Growth Hacker](https://gptstore.ai/gpts/s3N7EOTRNG-twitter-growth-hacker) - Create viral Twitter Long Form post on a topic.
+
+
+<div id="linkedin"/>
 
 ## LinkedIn
 * [Linked In Post Creator](https://gptstore.ai/gpts/MGouWWkUUs-linked-in-post-creator) - Crafts LinkedIn posts from prompts and data, maintaining a professional tone.
@@ -74,6 +84,9 @@ with Bing Chat or chat GPT or Google Bard just to name a few.
 * [Your Link Ads Strategist](https://gptstore.ai/gpts/5vIofenfMy-your-link-ads-strategist) - Explore our GPT expert for LinkedIn Advertising, designed for impactful B2B marketing.
 * [Job Hunt Helper](https://gptstore.ai/gpts/EE13mYqtkt-job-hunt-helper) - Tracks recent, relevant job postings and assists with LinkedIn, resumes, and networking.
 
+
+<div id="seo"/>
+
 ## SEO
 * [Andrew Darius' SEO Advisor](https://gptstore.ai/gpts/pY4iOa64Yl-andrew-darius-seo-advisor) - SEO specialist offering expert advice on website optimization and ranking strategies.
 * [SEO Content Wizard](https://gptstore.ai/gpts/DPB0Jm6B2s-seo-content-wizard) - Expert in keyword research and content planning, following top SEO strategies.
@@ -82,6 +95,8 @@ with Bing Chat or chat GPT or Google Bard just to name a few.
 * [Keyword Strategy](https://gptstore.ai/gpts/Com1dP5Xk_-keyword-strategy) - SEO assistant for keyword analysis and content planning.
 * [SEO & Blog Writer Pro](https://gptstore.ai/gpts/ok95FPEk41-seo-blog-writer-pro) - Expert in SEO blog writing and optimization - Article Wizard , KW Cluster, KW Suggestion, Content Audit.
 * [SEO Optimizer](https://gptstore.ai/gpts/B4hROEqJIs-seo-optimizer) - An SEO expert optimizing texts for search visibility.
+
+<div id="tools"/>
 
 ## Tools
 * [Canva](https://gptstore.ai/gpts/4nBAUVbWT-canva) - Effortlessly design anything: presentations, logos, social media posts and more.
@@ -96,6 +111,8 @@ with Bing Chat or chat GPT or Google Bard just to name a few.
 * [Anime Art Creator](https://gptstore.ai/gpts/HTX5isqUGs-anime-art-creator) - Expert in creating & editing anime-style images.
 * [Logo Crafter](https://gptstore.ai/gpts/IgZqEnO4vf-logo-crafter) - Create flat, sleek, custom logos.
 * [Thumbnail Sketcher](https://gptstore.ai/gpts/lRIqkqVLk-thumbnail-sketcher) - Create blog thumbnails.
+
+<div id="monetization"/>
 
 ## Monetization
 * [YouTube Strategist](https://gptstore.ai/gpts/thzW_3c1Ip-youtube-strategist) - Friendly YouTube content and monetization advisor.
