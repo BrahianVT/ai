@@ -8,8 +8,8 @@ tags: [Productivity, Others]
 
 # The most complete Ai directories in the internet
 
-As we know when Chat GPT lanched last years, and
-after that a lot of conpanies also lanched similar products or anothers just lunch GPT grappers,
+As we know when Chat GPT lanched last year, and
+after that a lot of companies also lanched similar products or anothers just lunch GPT wrappers.
 
 Here are the most complete Ai directories I've found in the web.
 
