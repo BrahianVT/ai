@@ -1,7 +1,7 @@
 ---
 title: "Don't Get Banned! How to Use AI as Legit Tool for your University Assignments"
 thumb: "https://i.ytimg.com/vi_webp/UlYXB7p_Q4I/maxresdefault.webp"
-tags: [UK Dissertation Coach ]
+tags: [ Personal ]
 ---
 
  # Don't Get Banned! How to Use AI as (Legit) Tool for your University Assignments 
