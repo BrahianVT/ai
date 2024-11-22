@@ -1,3 +1,4 @@
+let elementsInTagCache = new Map();
 module.exports = (config) => {
   config.addPassthroughCopy('src/assets/img/**/*');
   config.addPassthroughCopy({ 'src/posts/img/**/*': 'assets/img/' });
@@ -10,35 +11,39 @@ module.exports = (config) => {
   config.addFilter('readableDate', require('./lib/filters/readableDate'));
   config.addFilter('minifyJs', require('./lib/filters/minifyJs'));
 
-  config.addFilter("getRandom5", function(items){
-    if(!items.length || items.length < 5) return;
+  config.addFilter("getRandomNbyCategory", function(items, tags, n){
+    if(!items.length || items.length < n) return;
 
-    var selected = []
-	for(var i = 0; i < 5; i++){
-        selected.push(items[Math.floor(Math.random() * items.length)]);
-    }    
+     // Convert tags to array if it isn't already
+     const searchTags = Array.isArray(tags) ? tags : [tags];
+    const cacheKey = JSON.stringify(searchTags);
+
+    let elementsInTag;
+
+    if(elementsInTagCache.has(cacheKey)){
+        elementsInTag = elementsInTagCache.get(cacheKey);
+    } else {
+        elementsInTag = items.filter(i => {
+            const itemTags = Array.isArray(i.data.tags) 
+                ? i.data.tags 
+                : (i.data.tags ? [i.data.tags] : []);
+                
+            return itemTags.some(tag => searchTags.includes(tag));
+        });
+        elementsInTagCache.set(cacheKey, elementsInTag);
+    }
+     
+ 
+     if (!elementsInTag.length || elementsInTag.length < n) return elementsInTag;
+
+       
+    for (let i = elementsInTag.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [elementsInTag[i], elementsInTag[j]] = [elementsInTag[j], elementsInTag[i]]; // Swap elements
+      }
     
 
-	return selected;
-
-  });
-
-  config.addFilter("getRandom10byCategory", function(items, tags){
-    if(!items.length || items.length < 10) return;
-
-    var elementsInTag = items.filter(i => {
-        let isNext = i.data.tags.some(item => tags.includes(item));
-        return isNext;
-    });
-
-    console.log(elementsInTag.length)
-    var selected = []
-	for(var i = 0; i < 10; i++){
-        selected.push(elementsInTag[Math.floor(Math.random() * elementsInTag.length)]);
-    }    
-    
-
-	return selected;
+	return elementsInTag.slice(0, n);
 
   });
   config.addTransform('minifyHtml', require('./lib/transforms/minifyHtml'));

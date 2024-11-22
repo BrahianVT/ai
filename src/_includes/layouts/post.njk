@@ -23,12 +23,13 @@ layout: default
         {{ content | safe }}
     </div>
 
-    {% set randomPosts = collections.posts | getRandom5 %}
+  {% if tags %}
+    {% set randomPosts = collections.posts | getRandomNbyCategory(tags, 5) %}
     <br>
     {% for rand in randomPosts %}
         <strong  style="color: red">You may also check:</strong><a href="{{rand.url}}">{{ rand.data.title }}</a><br>
     {% endfor%}
-    
+  {% endif %} 
 
     {% if site.disqusShortname %}
     <div class="mt-10">
@@ -41,10 +42,23 @@ layout: default
     {% endif %}
 </article>
 
-{% set rightSide = collections.posts | getRandom10byCategory(tags) %}
+{% if tags %}
+{% set rightSide = collections.posts | getRandomNbyCategory(tags, 10) %}
  <aside class="flex  max-w-[250px] min-w-[100px] flex-grow">
         <div class=" flex flex-col px-1 ">
-            <!-- div class="flex max-w-[200px] mx-auto  border-b border-gray-600">PostPost Post Post Post Post Post Post Post Post Post Post Post Post Post Post Post PostPost Post Post Post Post Post Post Post Post Post Post PoPost Post Post Post Post  Post Post Post Post Post </div> -->
+            <div class="flex max-w-[200px] mx-auto  border-b border-gray-600">
+               <script type="text/javascript">
+	atOptions = {
+		'key' : '3c942588b951c925203d443e9c9113b2',
+		'format' : 'iframe',
+		'height' : 300,
+		'width' : 160,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.highperformanceformat.com/3c942588b951c925203d443e9c9113b2/invoke.js"></script>
+            </div> <!-- -->
+            
              {% for i in rightSide %}
                 <div class="flex  max-w-[200px]  justify-center mx-auto  border-b border-gray-600">
                     <a class="no-underline hover:underline text-cyan-600 dark:text-cyan-400" href="{{i.url}}">{{ i.data.title }}</a>
@@ -54,3 +68,5 @@ layout: default
             
         </div>
   </aside>
+
+{% endif %}
