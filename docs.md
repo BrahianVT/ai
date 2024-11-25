@@ -116,3 +116,64 @@ Explanation of Changes:
 
 
 With this correction, the sidebar should now display random posts that share at least one tag with the currently displayed post, dramatically improving the relevance of your related posts and solving the performance issue you were encountering.  I've also improved the layout a bit, adding a flexbox for better organization. If you removed other parts of the header like the title or date published, you can add them back.
+
+
+
+
+
+In the last problem we had:
+
+
+
+The error message `[Line 4, Column 26] expected variable end` points to a syntax problem in your Nunjucks template, specifically with how you're using variables. The error is likely in one of these lines in `gallery.njk`:
+
+* Line 4: `<title>{{ title | default: "Gallery" }}</title>`
+* Inside your JavaScript, where you use template literals:  `${title}`, `${baseUrl}`, etc.
+
+Here's the breakdown of the problem and the solution:
+
+**Problem:**
+
+You're using JavaScript template literals (backticks and `${}`) *inside* a Nunjucks template.  Nunjucks also uses `{{` and `}}` for its variables. This creates a conflict.  The Nunjucks parser gets confused because it sees the `${` inside the JavaScript string and expects it to be a Nunjucks variable, but it's not properly closed.
+
+**Solution:**
+
+Escape the JavaScript template literals within your Nunjucks template. Here's how:
+
+```javascript
+// In your gallery.njk JavaScript section
+
+gallery.innerHTML += `
+  <div class="gallery-item">
+    <a href="` + baseUrl + i + `.html">  <!--- Concatenation for URL -->
+      <img src="page${i}.png" alt="${title} Página ${i}" loading="eager"> <!--- Fixed! --->
+      <p>` + title + ` Página ${i}</p>  <!--- Fixed! --->
+    </a>
+  </div>
+`;
+
+
+// Similar change in the showMoreButton's event listener
+
+
+ newItem.innerHTML = `
+              <a href="` + baseUrl + i + `.html">
+                <img src="page${i}.png" alt="${title} Página ${i}" loading="lazy">
+                <p>` + title + ` Página ${i}</p>
+              </a>
+          `;
+
+
+
+```
+
+**Explanation:**
+
+1. **String Concatenation:** Instead of trying to embed Nunjucks variables directly within the JavaScript template literals, use JavaScript's string concatenation (`+`) operator.
+
+2. **Simplified URL:**  For the URL in the main loop, you can simplify further using string concatenation like this:   `` ` + baseUrl + i + `.html ` ``.
+
+3. **`showMoreButton` Fix:** Make the same changes (escaping or concatenation) in the `innerHTML` you set within the `showMoreButton`'s click event listener.
+
+
+By separating the JavaScript template literals from the Nunjucks variables, you prevent the parsing conflict, and your template should compile and render correctly.  This approach is cleaner and easier to read as well.
