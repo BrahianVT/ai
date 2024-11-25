@@ -1,5 +1,6 @@
 ---
 title: "Should You Use AI for Content? Pros, Cons & Expert Tips"
+date: "2024-11-21"
 thumb: "https://i.ytimg.com/vi_webp/9KX4CjNFNvU/maxresdefault.webp"
 tags: [Tools, Personal]
 ---

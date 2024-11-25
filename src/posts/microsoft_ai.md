@@ -1,5 +1,6 @@
 ---
 title: "Microsoft's AI Toolkit for VS Code: This FREE Extension BEATS CURSOR w/ FREE GPT-4"
+date: "2024-11-21"
 thumb: "https://i.ytimg.com/vi_webp/Z8pCrC-NQ0U/maxresdefault.webp"
 tags: [Tools, Productivity]
 ---

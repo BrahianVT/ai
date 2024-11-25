@@ -1,5 +1,6 @@
 ---
 title: "Don't Get Banned! How to Use AI as Legit Tool for your University Assignments"
+date: "2024-11-21"
 thumb: "https://i.ytimg.com/vi_webp/UlYXB7p_Q4I/maxresdefault.webp"
 tags: [ Personal ]
 ---
