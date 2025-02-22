@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   layout: 'post',
   title: 'Untitled',
   eleventyComputed: {

@@ -1,5 +1,14 @@
 let elementsInTagCache = new Map();
-module.exports = (config) => {
+
+import readableDate from './lib/filters/readableDate.js';
+import minify from './lib/filters/minifyJs.js';
+import minifyHtml from './lib/transforms/minifyHtml.js';
+import posts from './lib/collections/posts.js';
+import tagLists from './lib/collections/tagList.js';
+import pagedPosts from './lib/collections/pagedPosts.js';
+import pagedPostsByTag from './lib/collections/pagedPostsByTag.js';
+
+export default function (config)  {
   config.addPassthroughCopy('src/assets/img/**/*');
   config.addPassthroughCopy({ 'src/posts/img/**/*': 'assets/img/' });
 
@@ -8,8 +17,8 @@ module.exports = (config) => {
   config.addLayoutAlias('default', 'layouts/default.njk');
   config.addLayoutAlias('post', 'layouts/post.njk');
 
-  config.addFilter('readableDate', require('./lib/filters/readableDate'));
-  config.addFilter('minifyJs', require('./lib/filters/minifyJs'));
+  config.addFilter('readableDate', readableDate);
+  config.addFilter('minifyJs', minify);
 
   config.addFilter("getRandomNbyCategory", function(items, tags, n){
     if(!items.length || items.length < n) return;
@@ -46,12 +55,12 @@ module.exports = (config) => {
 	return elementsInTag.slice(0, n);
 
   });
-  config.addTransform('minifyHtml', require('./lib/transforms/minifyHtml'));
+  config.addTransform('minifyHtml', minifyHtml);
 
-  config.addCollection('posts', require('./lib/collections/posts'));
-  config.addCollection('tagList', require('./lib/collections/tagList'));
-  config.addCollection('pagedPosts', require('./lib/collections/pagedPosts'));
-  config.addCollection('pagedPostsByTag', require('./lib/collections/pagedPostsByTag'));
+  config.addCollection('posts', posts);
+  config.addCollection('tagList', tagLists);
+  config.addCollection('pagedPosts', pagedPosts);
+  config.addCollection('pagedPostsByTag', pagedPostsByTag);
 
   return {
     dir: {

@@ -1,4 +1,4 @@
-module.exports = {
+export default  {
   title: 'Tips AI',
   description: 'What can do or automate with AI?',
   keywords: ['ai', 'Ai', 'Chat-gpt', 'artificial', "intelligence","Midjourney"],
