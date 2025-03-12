@@ -1,7 +1,7 @@
 ---
 title: "Use AI Like a PRO! Transform Your Project Codebase into Context!"
 thumb: "https://i.ytimg.com/vi_webp/6JhvMDT0jAg/maxresdefault.webp"
-tags: [tools]
+tags: [Tools]
 ---
 
  # Use AI Like a PRO! Transform Your Project Codebase into Context! 
