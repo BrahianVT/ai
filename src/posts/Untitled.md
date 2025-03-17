@@ -3,7 +3,7 @@ title: "How to build AI products that make money"
 date: "2023-12-22"
 slug: "how_to_build_AI_products_that_make_money"
 thumb: "https://i.imgur.com/jwazJUH.png"
-tags: [Businnes, Tools]
+tags: [Businees, Tools]
 ---
 
 
