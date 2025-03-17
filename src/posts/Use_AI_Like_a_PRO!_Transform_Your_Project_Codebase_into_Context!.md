@@ -1,5 +1,6 @@
 ---
 title: "Use AI Like a PRO! Transform Your Project Codebase into Context!"
+date: "2025-03-15"
 thumb: "https://i.ytimg.com/vi_webp/6JhvMDT0jAg/maxresdefault.webp"
 tags: [Tools]
 ---

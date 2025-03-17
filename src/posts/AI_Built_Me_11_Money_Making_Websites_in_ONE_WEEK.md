@@ -1,5 +1,6 @@
 ---
 title: "AI Built Me 11 Money Making Websites in ONE WEEK"
+date: "2025-03-16"
 thumb: "https://i.ytimg.com/vi_webp/buFdMo5VQHI/maxresdefault.webp"
 tags: [Tools]
 ---
